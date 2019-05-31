@@ -10,7 +10,7 @@ html {
     overflow: hidden;
 }
 
-body { 
+body {
     background-color: transparent;
 }
 
@@ -38,11 +38,15 @@ li a {
     color: white;
     text-align: center;
     padding: 14px 16px;
-    text-decoration: none;    
+    text-decoration: none;
 }
 
 li a:hover {
     background-color: #111;
+}
+
+p {
+  margin: 0px 0;
 }
 
 .active {
@@ -59,17 +63,29 @@ li a:hover {
     text-align: center;
 }
 
+.all-projects {
+  font-size: 20px;
+}
+
 #wholepage {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
+#cloundbox {
+  background: rgba(255, 255, 255, 0.5);
+  height: 430px;
+  width: 430px;
+  padding: 0;
+  margin: 0 auto;
+}
+
 #citation {
   font-size: 20px;
   background: rgba(255, 255, 255, 0.5);
-  width: 300px;
-  padding: 100px;
+  height: 100px;
+  width: 430px;
   margin: 0 auto;
 }
 
