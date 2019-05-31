@@ -64,7 +64,15 @@ p {
 }
 
 .all-projects {
-  font-size: 20px;
+  font-size: 5px;
+}
+
+.container {
+  background: rgba(255, 255, 255, 0.5);
+  height: 730px;
+  width: 430px;
+  padding: 0;
+  margin: 0 auto;
 }
 
 #wholepage {
@@ -73,10 +81,3 @@ p {
     margin-right: auto;
 }
 
-#box {
-  background: rgba(255, 255, 255, 0.5);
-  height: 530px;
-  width: 430px;
-  padding: 0;
-  margin: 0 auto;
-}
