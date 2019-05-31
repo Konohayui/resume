@@ -4,6 +4,9 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/projects.css">
         <title>"" </title>
+        <script type="text/x-mathjax-config"> MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});</script>
+        <script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
     </head>
     <body>  
         <div class = "center" id = "wholepage">
@@ -30,7 +33,29 @@
                 </div>
             </div>
             <hr>
+            <div class = "container">
+              <p style = "font-size:10px" align = "center">
+              Note: in this page, I only post the competitions I like.
+              </p>
+              <h4 style = "font-family::Times">Kaggle Data Science Competition</h4>
+              <div class = "all-projects">
+              <dl>
+              <dt> <a href = "https://www.kaggle.com/c/avito-demand-prediction"> Avito Demand Prediction Challenge</a></dt>
+                <dd> Top 2% out of 1873 teams </dd>
+                <dd> The given dataset contained text, numerical and image features. One of the biggest challenge (in my opinion) was texts are in Russian.</dd>
+                <dd> In this competition, we used a single layer stacking of different Neural Network and LGN models, and then trained our stack with XGB and blended the results with LGB stacker 1:1. Since there are not many word embeddings for Russian texts, we applied TF-IDf for feature engineering and then used PCA to reduce the dimention from 2000 to 200. </dd>
+             <dt><a href = "https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge"> Toxic Comment Classification Challenge </a></dt>
+               <dd> Top 2% out of 4551 tems</dd>
+               <dd> Challenge: Don't have computer with good GPU and enough RAM for training. </dd>
+               <dd> Since this was our first Natural Language problem, we stanked and blended our Neural Network models (over 20 models). Our best model was a RCNN that based on <a href = "https://www.kaggle.com/konohayui/bi-gru-cnn-poolings"> bi-gru-cnn-poolings </a> with some tunnings. </dd>
+              <dt><a href = "https://www.kaggle.com/c/quora-insincere-questions-classification/overview"> Quora Insincere Questions Classification </a></dt>
+              <dd> Top 20% out of 1401 teams</dd>
+              <dd> This was a kernel (13Gb RAM and Tesla 80k GPU) only competition.</dd>
+              <dd> <a href = "https://www.kaggle.com/konohayui/topic-modeling-on-quora-insincere-questions"> Topic modeling</a>, a small projects</dd>
+              <dd> Final model was a RNN model with poolings and attention. Because kernel only runs up to 2 hours, we spent a lot of time on improving runtime. Our solution for that was inserting a Capsule layer between GRU layers that groups outputs into different capsule. In order to get better results, we applied stochastic weighted average to average model weights after 3 epoch. </dd>
+              </dl>
+              </div>
+            </div>
         </div>
     </body>
 </html>
-        
