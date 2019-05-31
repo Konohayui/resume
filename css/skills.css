@@ -1,0 +1,91 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background: url("https://i.pximg.net/img-master/img/2016/03/18/05/15/25/55869729_p0_master1200.jpg") no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background-color: transparent;
+}
+
+/* body {
+    background: #000006;
+    overflow-x: hidden;
+    line-height: 0;
+    color: #eee;
+} */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+p {
+  margin: 0px 0;
+}
+
+.active {
+    background-color: red;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.header {
+    text-align: center;
+}
+
+.all-projects {
+  font-size: 20px;
+}
+
+#wholepage {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#cloundbox {
+  background: rgba(255, 255, 255, 0.5);
+  height: 230px;
+  width: 430px;
+  padding: 0;
+  margin: 0 auto;
+  border-color: black;
+}
+
+#box {
+  background: rgba(255, 255, 255, 0.5);
+  height: 530px;
+  width: 430px;
+  padding: 0;
+  margin: 0 auto;
+}
