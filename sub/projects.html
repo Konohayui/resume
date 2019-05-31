@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/home_page.css">
+        <title>"" </title>
+    </head>
+    <body>  
+        <div class = "center" id = "wholepage">
+            <hr>
+            <div id = "top-menu">
+                <div>
+                    <ul class = "top-menu">
+                        <li class = "active">
+                            <a href = "index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href = "sub/projects.html">Projects</a>
+                        </li>
+                        <li>
+                            <a href = "sub/skills.html">Skills</a>
+                        </li>
+                        <li>
+                            <a href = "sub/experiences.html">Experiences</a>
+                        </li>
+                        <li>
+                            <a href = "sub/achievements.html">Achievements</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <div class = "center">
+              <div id = "cloundbox"><div id = "word-cloud"></div></div>
+              <div class = "all-projects" id = "box">
+              <h5>Kaggle Data Science Competitions</h5>
+              <p></p>
+              </div>
+            </div>
+        </div>
+        
+        <script src = "https://d3js.org/d3.v4.js"></script>
+        <script src="//d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+        <script src = "https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+        <script src = "JavaScript/word_cloud.js"></script>
+    </body>
+</html>
