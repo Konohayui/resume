@@ -73,15 +73,6 @@ p {
     margin-right: auto;
 }
 
-#cloundbox {
-  background: rgba(255, 255, 255, 0.5);
-  height: 230px;
-  width: 430px;
-  padding: 0;
-  margin: 0 auto;
-  border-color: black;
-}
-
 #box {
   background: rgba(255, 255, 255, 0.5);
   height: 530px;
