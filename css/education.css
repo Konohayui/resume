@@ -80,6 +80,11 @@ dt {
   margin: 0 auto;
 }
 
+.online-class {
+  padding: 50px;
+  font-size: 15px;
+}
+
 #wholepage {
     width: 600px;
     margin-left: auto;
