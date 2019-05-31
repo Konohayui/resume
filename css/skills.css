@@ -67,17 +67,29 @@ p {
   font-size: 20px;
 }
 
+.column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
 #wholepage {
     width: 600px;
     margin-left: auto;
     margin-right: auto;
 }
 
-#cloundbox {
+#cloudbox {
   background: rgba(255, 255, 255, 0.5);
-  height: 230px;
-  width: 430px;
-  padding: 0;
+  height: 730px;
+  width: 400px;
+  padding: 0px;
   margin: 0 auto;
   border-color: black;
 }
