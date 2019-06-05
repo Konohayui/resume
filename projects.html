@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="css/projects.css">
         <title>"" </title>
-</script>
     </head>
     <body>  
         <div class = "center" id = "wholepage">
@@ -44,14 +43,21 @@
                 <dd> In this competition, we used a single layer stacking of different Neural Network and LGN models, and then trained our stack with XGB and blended the results with LGB stacker 1:1. Since there are not many word embeddings for Russian texts, we applied TF-IDf for feature engineering and then used PCA to reduce the dimention from 2000 to 200. </dd>
              <dt><a href = "https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge"> Toxic Comment Classification Challenge </a></dt>
                <dd> Top 2% out of 4551 tems</dd>
-               <dd> Challenge: Don't have computer with good GPU and enough RAM for training. </dd>
-               <dd> Since this was our first Natural Language problem, we stanked and blended our Neural Network models (over 20 models). Our best model was a RCNN that based on <a href = "https://www.kaggle.com/konohayui/bi-gru-cnn-poolings"> bi-gru-cnn-poolings </a> with some tunnings. </dd>
+               <dd> Challenge: Don't have computers with good GPUs and enough RAMs for training. </dd>
+               <dd> Since this was our first Natural Language problem, we stacked and blended our Neural Network models (over 20 models) to achieve our final result. Our best single model was a RCNN model that based on <a href = "https://www.kaggle.com/konohayui/bi-gru-cnn-poolings"> bi-gru-cnn-poolings </a> with some tunnings. </dd>
               <dt><a href = "https://www.kaggle.com/c/quora-insincere-questions-classification/overview"> Quora Insincere Questions Classification </a></dt>
-              <dd> Top 20% out of 1401 teams</dd>
+              <dd> Top 20% out of 1401 teams (in top 6% out of 1200 before a high score kernel published to the public)</dd>
               <dd> This was a kernel (13Gb RAM and Tesla 80k GPU) only competition.</dd>
               <dd> <a href = "https://www.kaggle.com/konohayui/topic-modeling-on-quora-insincere-questions"> Topic modeling</a>, a small projects to study NLP</dd>
               <dd> Final model was a RNN model with poolings and attention. Because kernel only runs up to 2 hours, we spent a lot of time on improving runtime. Our solution for that was inserting a Capsule layer between GRU layers that groups outputs into different capsule. In order to get better results, we applied stochastic weighted average to average model weights after 3 epoch. </dd>
               </dl>
+              </div>
+              <h4 style = "font-family::Times">Web Development</h4>
+              <div class = "all-projects">
+                <dl>
+                <dt><a href = "https://shenmemingzine.github.io/Bitcoin-Price/">Bitcoin Price</a></dt>
+                <dd>This project is for studying Time-Series (because coindesk only provides close prices data for free, we just do a simple pattern analysis). D3 is the main module to create each line chart. In order to zoom in specific time range, we modified a <a href = "https://www.d3-graph-gallery.com/graph/line_brushZoom.html">function</a> from D3 gallery. The major obstacle of this project was  replacing new charts with new json files. If we simply update the json file to create a new chart, previous one will maintain on the background; therefore, we removed all svg structures of previous chart and then added new svg structures to generate a new one.</dd>
+                </dl>
               </div>
             </div>
         </div>
