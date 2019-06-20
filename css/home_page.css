@@ -1,48 +1,117 @@
-ul {
-    font-family: Arial, Verdana;
-    font-size: 14px;
+html, body {
     margin: 0;
     padding: 0;
-    list-style: none;
-}
-ul li {
-    display: block;
-    position: relative;
-    float: left;
-}
-li ul {
-    display: none;
-}
-ul li a {
-    display: block;
-    text-decoration: none;
-    color: #ffffff;
-    border-top: 1px solid #ffffff;
-    padding: 5px 15px 5px 15px;
-    background: #2C5463;
-    margin-left: 1px;
-    white-space: nowrap;
-}
-ul li a:hover {
-    background: #617F8A;
-}
-li:hover ul {
-    display: block;
-    position: absolute;
-}
-li:hover li {
-    float: none;
-    font-size: 11px;
-}
-li:hover a {
-    background: #617F8A;
-}
-li:hover li a:hover {
-    background: #95A9B1;
 }
 
-#menu {
-    position: absolute;
-    top: 50px;
-    right: 0px;
+html {
+    background: rgba(255, 255, 255);
+    background-size: cover;
+    height: 100%;
+}
+
+/* body {
+    background-color: transparent;
+} */
+
+/* nagvigator bar */
+.nagv ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 600px;
+}
+
+.nagv li {
+    float: left;
+}
+
+.nagv li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nagv li a:hover {
+    background-color: #111;
+}
+
+/* -- */
+
+p {
+  margin: 0px 0;
+}
+
+.active {
+    background-color: red;
+}
+
+.center {
+    margin: auto;
+    width: 80%;
+    padding: 10px;
+}
+
+.header {
+    text-align: center;
+}
+
+.all-projects {
+  font-size: 15px;
+}
+
+#wholepage {
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#citation {
+  font-size: 20px;
+  height: 100px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 100px;
+}
+
+
+.online-class {
+  padding: 0px;
+  font-size: 15px;
+}
+
+/* sticky navigator bar */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+/* -- */
+
+.column {
+  float: left;
+  width: 15%;
+  padding: 5px;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+#cloudbox {
+  height: 730px;
+  width: 530px;
+  padding: 0px;
+  margin: 0 auto;
+  border-color: black;
 }
