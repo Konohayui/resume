@@ -83,8 +83,20 @@
               <hr>
               <hr>
               <p style = "font-size:10px" align = "center">
-              Note: in this page, I only post the competitions I like.
               </p>
+	      <h4 style = "font-family::Times">Research Experience</h4>
+		 <div class = "research-projects">
+              	 <dl>
+              	 <dt><a>Denoise Speech Using Deep Learning Networks and Wavelet, Advisor: Adel Faridani, Ph.D. Department of Mathematics, Oregon State University</a></dt>
+		 <dd>Built Encoder-Decoder neural network models by using Convolutional layers for audios denoising</dd>
+	 	 <dd>Applied wavelet for deconstructing and reconstructing noised audios</dd>
+		 <dd>Implemented Mallat's algorithm to constuct Daubechies wavelets</dd>
+		 <dt><a>Sentiment Polarity Identification in Financial News (on-going)</a></dt>
+		 <dd>Applied Beautiful-Soup to web-scrap daily financial news from major news websites</dd>
+		 <dd>Built a robot to collect Twitter daily top news</dd>
+	 	 <dd>Sentiment Analysis</dd>
+		 <dd>Potential Statistical Method</dd>
+		 </dl>
               <h4 style = "font-family::Times">Kaggle Data Science Competition</h4>
               <div class = "all-projects">
               <dl>
@@ -96,8 +108,11 @@
                <dd> Top 2% out of 4551 tems</dd>
                <dd> Challenge: Don't have computers with good GPUs and enough RAMs for training. </dd>
                <dd> Since this was our first Natural Language problem, we stacked and blended our Neural Network models (over 20 models) to achieve our final result. Our best single model was a RCNN model that bases on <a href = "https://www.kaggle.com/konohayui/bi-gru-cnn-poolings"> bi-gru-cnn-poolings </a> with some tunnings. </dd>
-              <dt><a href = "https://www.kaggle.com/c/quora-insincere-questions-classification/overview"> Quora Insincere Questions Classification </a></dt>
-              <dd> Top 20% out of 1401 teams (in top 6% out of 1200 before a high score kernel published to the public)</dd>
+             <dt><a href = "https://www.kaggle.com/competitions/mercari-price-suggestion-challenge"> Mercari Price Suggestion Challenge </a></dt>
+               <dd> Top 8% out of 2380 teams</dd>
+               <dd> We applied tf-idf from sklearn to extract features from texts and then built a ridge model with all original numerical features and tf-idf features for predicting the correct item price from an ad </dd>
+             <dt><a href = "https://www.kaggle.com/c/quora-insincere-questions-classification/overview"> Quora Insincere Questions Classification </a></dt>
+              <dd> Top 20% out of 1401 teams</dd>
               <dd> This was a kernel (13Gb RAMs and a Tesla 80k GPU) only competition.</dd>
               <dd> <a href = "https://www.kaggle.com/konohayui/topic-modeling-on-quora-insincere-questions"> Topic modeling</a>, a small projects for studying NLP</dd>
               <dd> Final model was a RNN model with poolings and attention. Because kernel only runs up to 2 hours, we spent a lot of time on improving training time. Our solution for that was inserting a Capsule layer between GRU layers that groups outputs into k capsules. In order to get better results, we applied stochastic weighted average to average weights after 3 epochs. </dd>
@@ -159,6 +174,9 @@
                 <div class = "column">
                   <img src = "images/SQL.png" alt = "SQL" style = "width:100%">
                 </div>
+		<div class = "column">
+                  <img src = "images/download.jpg" alt = "R" style = "width:100%">
+                </div>      
                 <div class = "column">
                   <img src = "images/Matlab_Logo.png" alt = "Matlab" style = "width:100%">
                 </div>
