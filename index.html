@@ -1,227 +1,183 @@
 <!DOCTYPE html>
-<html lang = "en">
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="css/home_page.css">
-        <title>SomeoneAtSomewhere</title>
-    </head>
-    <body>  
-        <div class = "center" id = "wholepage">
-            <div id = "top-menu">
-                <hr>
-                <div class = "nagv" id = "navbar">
-                    <ul class = "top-menu">
-                        <li class = "active">
-                            <a href = "#">Home</a>
-                        </li>
-                        <li>
-                            <a href = "#education">Education</a>
-                        </li>
-                        <li>
-                            <a href = "#projects">Projects</a>
-                        </li>
-                        <li>
-			    <a href = "#experiences">Experiences</a>
-                        </li>
-                        <li>
-                            <a href = "#skills">Skills</a>
-                        </li>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home_page.css">
+    <title>SomeoneAtSomewhere | Portfolio</title>
+</head>
+<body>  
+    <div id="wholepage">
+        <nav id="navbar">
+            <div class="nav-container">
+                <ul class="nav-menu">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#experiences">Experiences</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <header class="hero-section">
+            <blockquote id="citation"> 
+                <p>"Many failures are not due to limited capacity, but because they do not adhere to the end"</p>
+                <cite>— No Game No Life</cite> 
+            </blockquote>
+        </header>
+        
+        <section id="education" class="section-container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-grid">
+                <div class="education-card">
+                    <h3>Oregon State University, Corvallis, OR</h3>
+                    <p class="degree">Master of Science in Statistics</p>
+                </div>
+                <div class="education-card">
+                    <h3>Oregon State University, Corvallis, OR</h3>
+                    <p class="degree">Master of Science in Mathematics</p>
+                    <span class="date">June 2022</span>
+                </div>
+                <div class="education-card">
+                    <h3>Oregon State University, Corvallis, OR</h3>
+                    <p class="degree">Bachelor of Science in Mathematics</p>
+                    <span class="date">June 2017</span>
+                </div>
+            </div>
+
+            <div class="online-classes">
+                <h3>Online Classes</h3>
+                <ul class="clean-list">
+                    <li>Computer Science and Programming Using Python <span class="provider">@ MIT</span></li>
+                    <li>Computer Science 101 <span class="provider">@ Stanford University</span></li>
+                    <li>Machine Learning <span class="provider">@ Coursera</span></li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="projects" class="section-container">
+            <h2 class="section-title">Projects</h2>
+            
+            <h3 class="sub-section-title">Research Experience</h3>
+            <div class="project-list">
+                <div class="project-item">
+                    <h4>Denoise Speech Using Deep Learning Networks and Wavelet</h4>
+                    <p class="advisor">Advisor: Adel Faridani, Ph.D. Department of Mathematics, OSU</p>
+                    <ul>
+                        <li>Built Encoder-Decoder neural network models by using Convolutional layers for audios denoising</li>
+                        <li>Applied wavelet for deconstructing and reconstructing noised audios</li>
+                        <li>Implemented Mallat's algorithm to construct Daubechies wavelets</li>
                     </ul>
                 </div>
-                <hr>
-            </div>
-            
-            <div>
-            <p align = "center" id = "citation"> 
-              <cite>Many failures are not due to limited capacity, but because they do not adhere to the end</cite> -- No Game No Life 
-            </p>
-            </div>
-            
-            <!-- education -->
-            <div class = "education">
-            <a id = "education"></a>
-            <div style = "padding:50px"></div>
-            <div class = "container" style = "font-size:15px">
-            <hr>
-            <hr>
-            <dl>
-	      <dt>
-                Oregon State University, Corvallis, OR
-              </dt>
-              <dd>
-                Master of Science in Statistics 
-              </dd>
-              <dt>
-                Oregon State University, Corvallis, OR, June 2022
-              </dt>
-              <dd>
-                Master of Science in Mathematics 
-              </dd>
-              <dt>
-                Oregon State University, Corvallis, OR, June 2017
-              </dt>
-              <dd>
-                Bachelor of Science in Mathematics
-              </dd>
-            </dl>
-            <div class = "online-class">
-            <h4>Online Classes</h4>
-              <dl>
-                <dd>Computer Science and Programming Using Python at MIT</dd>
-                <dd>Computer Science 101 at Stanford University</dd>
-                <dd>Machine Learning at Coursera</dd>
-              </dl>
-            </div>
-            </div>
-            </div>
-            
-            <!-- projects -->
-            <div class = "projects">
-            <a id = "projects"></a>
-            <div style = "padding:50px"></div>
-            <div class = "container">
-              <hr>
-              <hr>
-              <p style = "font-size:10px" align = "center">
-              </p>
-	      <h4 style = "font-family::Times">Research Experience</h4>
-		 <div class = "research-projects">
-              	 <dl>
-              	 <dt><a>Denoise Speech Using Deep Learning Networks and Wavelet, Advisor: Adel Faridani, Ph.D. Department of Mathematics, Oregon State University</a></dt>
-		 <dd>Built Encoder-Decoder neural network models by using Convolutional layers for audios denoising</dd>
-	 	 <dd>Applied wavelet for deconstructing and reconstructing noised audios</dd>
-		 <dd>Implemented Mallat's algorithm to construct Daubechies wavelets</dd>
-		 <dt><a>Sentiment Polarity Identification in Financial News (on-going)</a></dt>
-		 <dd>Applied Beautiful-Soup to web-scrap daily financial news from major news websites</dd>
-		 <dd>Built a robot to collect Twitter daily top news</dd>
-	 	 <dd>Sentiment Analysis</dd>
-		 <dd>Potential Statistical Method</dd>
-		 </dl>
-              <h4 style = "font-family::Times">Kaggle Data Science Competition</h4>
-              <div class = "all-projects">
-              <dl>
-              <dt> <a href = "https://www.kaggle.com/c/avito-demand-prediction"> Avito Demand Prediction Challenge</a></dt>
-                <dd> Top 2% out of 1873 teams </dd>
-                <dd> Applied pre-trained Convolutional neural network models to extract features from image data</dd>
-                <dd> In this competition, we used a single layer stacking of different Neural Network and LGN models, and then trained our stack with XGB and blended the results with LGB stacker 1:1. Since there are not many word embeddings for Russian texts, we applied TF-IDf for feature engineering and then used PCA to reduce the dimention from 2000 to 200. </dd>
-             <dt><a href = "https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge"> Toxic Comment Classification Challenge </a></dt>
-               <dd> Top 2% out of 4551 tems</dd>
-               <dd> Challenge: Don't have computers with good GPUs and enough RAMs for training. </dd>
-               <dd> Since this was our first Natural Language problem, we stacked and blended our Neural Network models (over 20 models) to achieve our final result. Our best single model was a RCNN model that bases on <a href = "https://www.kaggle.com/konohayui/bi-gru-cnn-poolings"> bi-gru-cnn-poolings </a> with some tunnings. </dd>
-             <dt><a href = "https://www.kaggle.com/competitions/mercari-price-suggestion-challenge"> Mercari Price Suggestion Challenge </a></dt>
-               <dd> Top 8% out of 2380 teams</dd>
-               <dd> We applied tf-idf from sklearn to extract features from texts and then built a ridge model with all original numerical features and tf-idf features for predicting the correct item price from an ad </dd>
-             <dt><a href = "https://www.kaggle.com/c/quora-insincere-questions-classification/overview"> Quora Insincere Questions Classification </a></dt>
-              <dd> Top 20% out of 1401 teams</dd>
-              <dd> This was a kernel (13Gb RAMs and a Tesla 80k GPU) only competition.</dd>
-              <dd> <a href = "https://www.kaggle.com/konohayui/topic-modeling-on-quora-insincere-questions"> Topic modeling</a>, a small projects for studying NLP</dd>
-              <dd> Final model was a RNN model with poolings and attention. Because kernel only runs up to 2 hours, we spent a lot of time on improving training time. Our solution for that was inserting a Capsule layer between GRU layers that groups outputs into k capsules. In order to get better results, we applied stochastic weighted average to average weights after 3 epochs. </dd>
-              </dl>
-              </div>
-              <h4 style = "font-family::Times">Web Development</h4>
-              <div class = "all-projects">
-                <dl>
-                <dt><a href = "https://shenmemingzine.github.io/Bitcoin-Price/">Bitcoin Price</a></dt>
-                <dd>This project is a Time-Series study (because coindesk only provides close prices data for free, we just do a simple pattern analysis). D3 is the main module to create each line chart. In order to zoom in specific time range, we modified a <a href = "https://www.d3-graph-gallery.com/graph/line_brushZoom.html">function</a> from D3 gallery. The major obstacle of this project was  replacing new charts with new json files. If we simply update a json file and then create a new chart, previous one will maintain on the background; therefore, we removed all svg structures of previous chart and then added new svg structures to generate a new one.</dd>
-                </dl>
-              </div>
-            </div>
-            </div>
-            
-		
-		<!-- experiences -->
-            <div class = "experiences">
-            <a id = "experiences"></a>
-            <div style = "padding:50px"></div>
-            <div class = "containder">
-              <hr>
-              <hr>
-		<dl>
-	      <dt>
-                Graduate Teaching Assistant at Oregon State University - (Sept. 2019 — Present)
-              </dt>
-              <dd>
-                Teaching assigned College level Statistics/Mathematics courses
-              </dd>
-              <dd>
-                Assessing and correcting students’ programming code
-              </dd>
-              <dd>
-                Leading class discussions and answering student questions
-              </dd>
-		<dd>
-		Evaluating students' written answers on assignments
-		</dd>
-            </dl>
-            </div>
-            </div>
-		
-            <!-- skills -->
-            <div class = "skills">
-            <a id = "skills"></a>
-            <div style = "padding:50px"></div>
-            <hr>
-            <hr>
-            <div id = "cloudbox">
-              <div id = "word-cloud"></div>
-              <div class = "row">
-                <div class = "column">
-                  <img src = "images/Python.png" alt = "Python" style = "width:100%">
+                <div class="project-item">
+                    <h4>Sentiment Polarity Identification in Financial News <span class="badge-ongoing">On-going</span></h4>
+                    <ul>
+                        <li>Applied Beautiful-Soup to web-scrap daily financial news from major news websites</li>
+                        <li>Built a robot to collect Twitter daily top news</li>
+                        <li>Sentiment Analysis & Potential Statistical Methods</li>
+                    </ul>
                 </div>
-                <div class = "column">
-                  <img src = "images/latex.png" alt = "Latex" style = "width:100%">
-                </div>
-                <div class = "column">
-                  <img src = "images/SQL.png" alt = "SQL" style = "width:100%">
-                </div>
-		<div class = "column">
-                  <img src = "images/download.jpg" alt = "R" style = "width:100%">
-                </div>      
-                <div class = "column">
-                  <img src = "images/Matlab_Logo.png" alt = "Matlab" style = "width:100%">
-                </div>
-                <div class = "column">
-                  <img src = "images/JavaScript_logopng.png" alt = "Javascript" style = "width:100%">
-                </div>
-              </div>
-              <div class = "row">
-                <h3>
-                  Study Resources
-                </h3>
-                <dl>
-                  <dt> Programming </dt>
-                  <dd><span><a href = "https://mitpress.mit.edu/books/introduction-algorithms-third-edition">Introduction to Algorithms</a> By Thomas H. Cormen, Charles E. Leiserson, Ronald L. Rivest and Clifford Stein </span></dd>
-                  <dt> Python </dt>
-                  <dt> Machine Learning </dt>
-                  <dd><span><a href = "https://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738">Pattern Recognition and Machine Learning</a> By Christopher Bishop</span></dd>
-                  <dd><span><a href = "http://www.deeplearningbook.org/"> Deep Learning</a> By Ian Goodfellow, Yoshua Bengio and Aaron Courville </span></dd>
-                  <dt> JavaScript, HTML and CSS </dt>
-                  <dd><span><a href = "http://www.htmlandcssbook.com/">HTML and CSS: Design and Build Websites</a> By Jon Duckett </span></dd>
-                  <dd><span><a href = "https://www.w3schools.com/">W3 School</a></span></dd>
-                </dl>
-              </div>
             </div>
+
+            <h3 class="sub-section-title">Kaggle Data Science Competition</h3>
+            <div class="kaggle-grid">
+                <div class="kaggle-card">
+                    <h4><a href="https://www.kaggle.com/c/avito-demand-prediction" target="_blank">Avito Demand Prediction</a></h4>
+                    <span class="rank-badge">Top 2% (1873 teams)</span>
+                    <p>Applied pre-trained CNNs to extract features from image data. Stacking of NN and LGN models, trained stack with XGB, and blended with LGB stacker 1:1. Used TF-IDF and PCA to reduce dimensions from 2000 to 200 for Russian texts.</p>
+                </div>
+                <div class="kaggle-card">
+                    <h4><a href="https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge" target="_blank">Toxic Comment Classification</a></h4>
+                    <span class="rank-badge">Top 2% (4551 teams)</span>
+                    <p>Overcame hardware limits by stacking/blending over 20 Neural Network models. Best single model was an RCNN based on <a href="https://www.kaggle.com/konohayui/bi-gru-cnn-poolings" target="_blank">bi-gru-cnn-poolings</a> with custom tuning.</p>
+                </div>
+                <div class="kaggle-card">
+                    <h4><a href="https://www.kaggle.com/competitions/mercari-price-suggestion-challenge" target="_blank">Mercari Price Suggestion</a></h4>
+                    <span class="rank-badge">Top 8% (2380 teams)</span>
+                    <p>Applied TF-IDF from sklearn to extract features from texts. Built a ridge model combining original numerical features and TF-IDF outputs for ad item price predictions.</p>
+                </div>
+                <div class="kaggle-card">
+                    <h4><a href="https://www.kaggle.com/c/quora-insincere-questions-classification/overview" target="_blank">Quora Insincere Questions</a></h4>
+                    <span class="rank-badge">Top 20% (1401 teams)</span>
+                    <p>Kernel-only constraint (13Gb RAM / Tesla 80k). Built an RNN with poolings and attention. Integrated a Capsule layer between GRU layers to optimize training under 2 hours, using Stochastic Weighted Average (SWA).</p>
+                </div>
             </div>
-        </div>
-    </body>
-    
-    <!--script -->
+
+            <h3 class="sub-section-title">Web Development</h3>
+            <div class="project-list">
+                <div class="project-item">
+                    <h4><a href="https://shenmemingzine.github.io/Bitcoin-Price/" target="_blank">Bitcoin Price Time-Series Study</a></h4>
+                    <p>A pattern analysis using D3 to map line charts from Coindesk's closing pricing. Leveraged a dynamic brush zoom function from the D3 gallery. Handled data switching transitions by cleanly removing prior SVG structures from the DOM before generating new renderings.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="experiences" class="section-container">
+            <h2 class="section-title">Experiences</h2>
+            <div class="experience-card">
+                <div class="exp-header">
+                    <h3>Graduate Teaching Assistant</h3>
+                    <span class="exp-date">Sept. 2019 — Present</span>
+                </div>
+                <p class="company">Oregon State University</p>
+                <ul>
+                    <li>Teaching assigned College level Statistics/Mathematics courses</li>
+                    <li>Assessing and correcting students’ programming code</li>
+                    <li>Leading class discussions and answering student questions</li>
+                    <li>Evaluating students' written answers on assignments</li>
+                </ul>
+            </div>
+        </section>
+        
+        <section id="skills" class="section-container">
+            <h2 class="section-title">Skills & Stack</h2>
+            <div id="cloudbox">
+                <div id="word-cloud"></div>
+                <div class="skills-logo-grid">
+                    <div class="logo-item"><img src="images/Python.png" alt="Python"></div>
+                    <div class="logo-item"><img src="images/latex.png" alt="Latex"></div>
+                    <div class="logo-item"><img src="images/SQL.png" alt="SQL"></div>
+                    <div class="logo-item"><img src="images/download.jpg" alt="R"></div>     
+                    <div class="logo-item"><img src="images/Matlab_Logo.png" alt="Matlab"></div>
+                    <div class="logo-item"><img src="images/JavaScript_logopng.png" alt="Javascript"></div>
+                </div>
+                
+                <div class="resources-container">
+                    <h3>Curated Study Resources</h3>
+                    <dl class="resources-list">
+                        <dt>Algorithms</dt>
+                        <dd><a href="https://mitpress.mit.edu/books/introduction-algorithms-third-edition" target="_blank">Introduction to Algorithms</a> <small>by Cormen, Leiserson, Rivest, Stein</small></dd>
+                        
+                        <dt>Machine Learning</dt>
+                        <dd><a href="https://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738" target="_blank">Pattern Recognition and Machine Learning</a> <small>by Christopher Bishop</small></dd>
+                        <dd><a href="http://www.deeplearningbook.org/" target="_blank">Deep Learning</a> <small>by Goodfellow, Bengio, Courville</small></dd>
+                        
+                        <dt>Web Dev</dt>
+                        <dd><a href="http://www.htmlandcssbook.com/" target="_blank">HTML and CSS: Design and Build Websites</a> <small>by Jon Duckett</small></dd>
+                        <dd><a href="https://www.w3schools.com/" target="_blank">W3Schools platform</a></dd>
+                    </dl>
+                </div>
+            </div>
+        </section>
+    </div>
+
     <script>
-    	window.onscroll = function() {myFunction()};
-			var navbar = document.getElementById("navbar");
-			var sticky = navbar.offsetTop;
-	
-			function myFunction() {
-      	if (window.pageYOffset >= sticky) {
-    			navbar.classList.add("sticky")
-  			} else {
-    		navbar.classList.remove("sticky");
-  			}
-			}
+        window.onscroll = function() { myFunction() };
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+    
+        function myFunction() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
     </script>
-    <script src = "https://d3js.org/d3.v4.js"></script>
-        <script src="//d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
-        <script src = "https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
-        <script src = "JavaScript/word_cloud.js"></script>
-   <!-- -->
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="//d3js.org/d3-scale-chromatic.v0.3.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/d3.layout.cloud.js"></script>
+    <script src="JavaScript/word_cloud.js"></script>
+</body>
 </html>
